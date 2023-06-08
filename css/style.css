@@ -2,3 +2,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+footer {
+  background: skyblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

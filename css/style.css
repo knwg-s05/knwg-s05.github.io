@@ -6,13 +6,46 @@ html {
 
 body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
 }
 
-footer {
-  background: skyblue;
+a {
+  text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
 
-ul {
-  list-style: square url() outside;
+/* header */
+.main-nav {
+  display: flex;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 36px;
+  list-style: none;
+} 
+
+.main-nav li {
+  margin-left: 36px;
+}
+
+.main-nav a {
+  color: #432;
+}
+
+.main-nav a:hover {
+  color: #0bd;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
 }

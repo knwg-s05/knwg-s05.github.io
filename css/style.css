@@ -1,13 +1,18 @@
+@charset "utf-8";
+/* 共通 */
+html {
+  font-size: 100%;
+}
+
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
 }
 
 footer {
   background: skyblue;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+
+ul {
+  list-style: square url() outside;
 }

@@ -98,14 +98,16 @@ footer {
   opacity: 1;
 }
 
-        /* スマートフォン用のスタイル */
-        @media screen and (max-width: 480px) {
-          header {
-            padding: 10px;
-          }
+ /* スマートフォン用のスタイル */
+@media screen and (max-width: 480px) {
+  
+  header {
+    padding: 10px;
+  }
     
-          .content {
-            height: auto;
-            padding: 20px;
-          }
-        }
+  .content {
+    height: auto;
+    padding: 20px;
+  }
+
+}

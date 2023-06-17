@@ -11,11 +11,9 @@
     <!-- PageTOP用のアイコン読み取り -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
     <!-- ローカル用CSSログパス -->
-    <link rel="stylesheet" href="css/style.css" media="(min-width: 701px)">
-    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 700px)">
+    <link rel="stylesheet" href="css/style.css">
     <!-- GitHub用CSSログパス -->
-    <link rel="stylesheet" href="https://knwg-s05.github.io/css/style.css" media="(min-width: 701px)">
-    <link rel="stylesheet" href="https://knwg-s05.github.io/css/mobile.css" media="(max-width: 700px)">
+    <link rel="stylesheet" href="https://knwg-s05.github.io/css/style.css">
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="https://knwg-s05.github.io/favicon/apple-touch-icon.png">
@@ -50,35 +48,76 @@
       />
     </section>
 
-    <section class="content">
+    <section class="content new">
       <h1>NEWS</h1>
       <h2>新着情報</h2>
-      <!-- ローカルのログパス
-      <img
-      src="images/Top画像.png"
-      width="500"
-      alt="ポートフォリオ"
-      /> -->
-      <!-- GitHubでのログパス指定 -->
-      <img
-      src="https://knwg-s05.github.io/images/Top画像.png"
-      width="500"
-      alt="ポートフォリオ"
-      />
-      <p>ポートフォリオを作成しました。</p>
-      <small>Web</small>
-      <small>2023.6.25</small>
     </section>
+      <div class="news-content">
+        <!-- GitHubでのログパス指定 -->
+        <div>
+          <img class="news"
+          src="https://knwg-s05.github.io/images/Top画像.png"
+        
+          alt="ポートフォリオ"
+          />
+          <p>ポートフォリオを作成しました。</p>
+          <small>Web</small><br />
+          <small>2023.6.25</small>
+        </div>
+        <div>
+          <img class="news2"
+          src="images/coming-soon.jpg"
+          alt="ポートフォリオ2"
+          />
+          <!-- <img class="news"
+          src="https://knwg-s05.github.io/images/coming-soon.jpg"
+          width="300"
+          alt="ポートフォリオ2"
+          /> -->
+          <p>近日公開</p>
+          <small>アプリ</small><br />
+          <small>2023.??.??</small>
+        </div>
+        <div>
+          <img class="news2"
+          src="images/coming-soon.jpg"
+          alt="ポートフォリオ3"
+          />
+          <!-- <img class="news"
+          src="https://knwg-s05.github.io/images/coming-soon.jpg"
+          width="300"
+          alt="ポートフォリオ2"
+          /> -->
+          <p>近日公開</p>
+          <small>Web</small><br />
+          <small>2023.??.??</small>
+        </div>
+        <div>
+          <img class="news2"
+          src="images/coming-soon.jpg"
+          alt="ポートフォリオ3"
+          />
+          <!-- <img class="news"
+          src="https://knwg-s05.github.io/images/coming-soon.jpg"
+          width="300"
+          alt="ポートフォリオ2"
+          /> -->
+          <p>近日公開</p>
+          <small>Web開発</small><br />
+          <small>2023.??.??</small>
+        </div>
+      </div>
+    
 
     <section class="content prof">
       <h1>KOTA SUMITOMO</h1>
       <h2>スミトモ・コウタ</h2>
-      <img
+      <img class="circle"
       src="https://knwg-s05.github.io/images/IMG_3796.JPG"
-      width="400"
+      width="300"
       alt="プロフィール写真"
       />
-      <p>Web系/アプリエンジニア目指して勉強中。<br />
+      <p class="proftext">Web系/アプリエンジニア目指して勉強中。<br />
         現在システム監視/運用の業務従事。<br />
         美容師として11年半仕事しておりました。<br /><br /><br />
       </p>
@@ -147,16 +186,24 @@
         </form>
         </section>
 
-        <section class="page-header wrapper last">
+        <section class="content">
           <h1>kota Sumitomo</h1>
-          <nav>
-            <ul class="main-nav">
+          <nav class="page-footer wrapper">
+            <ul class="sub-nav">
               <li><a href="#">WORK</a></li>
               <li><a href="#">TOPICS</a></li>
               <li><a href="#">about</a></li>
               <li><a href="#">contact</a></li>
+            </ul>
+          </nav>
+          <nav class="page-footer wrapper">
+            <ul class="sub-nav">
               <li><a href="https://twitter.com/kotasumi_nwg"><i class="bi bi-twitter"></i></a></li>
               <li><a href="https://github.com/knwg-s05"><i class="bi bi-github"></i></a></li>
+            </ul>
+          </nav>  
+            <nav class="page-footer wrapper">  
+            <ul class="sub-nav">
               <li><a href="#">プライバシーポリシー</a></li>
             </ul>
           </nav>
@@ -170,7 +217,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- ローカル用jsファイルログパス -->
   <script src="js/script.js"></script>
-  GitHub用jsファイルのログパス
+  <!-- GitHub用jsファイルのログパス -->
   <script src="https://knwg-s05.github.io/js/script.js"></script>
   </body>
 </html>

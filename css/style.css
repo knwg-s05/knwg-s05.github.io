@@ -387,6 +387,7 @@ a.button:hover {
     transition: .5s;
     list-style: none;
     text-transform: uppercase;
+    opacity: 0;
   }
 
   .slide-menu li {
@@ -418,6 +419,8 @@ a.button:hover {
   }
   .slide-menu.active{
     transform: translateX(0); 
+    opacity: 1;
+    width: 100%;
   }
 
 /*タブレット SIZE NEWS
@@ -434,14 +437,10 @@ a.button:hover {
 }
 
 }
-
 /*スマホ SIZE
 ===============================================================*/
 @media only screen and (max-width: 480px) {
-  body {
-    padding-right: -70%;
-    width: 100%;
-  }
+
 
 /*スマホ フッダーナビ
 ===============================================================*/
@@ -471,18 +470,26 @@ a.button:hover {
 }
 
 .slide-menu {
-  width: 60%;
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  left: 0;
+  transform: translateX(100%);
+  transition: .5s;
+  list-style: none;
+  text-transform: uppercase;
+  opacity: 0;
 }
 
-.slide-menu li {
-  line-height: 400%;
-  text-align: center;
+/* スマホ時bodyタグにoverflow-x:hiddenが聞かない為 */
+.overf-x {
+  overflow-x: hidden;
 }
 
 /*スマホ SIZE Page TOPへもどるアイコン
 ===============================================================*/
-#page_top {
-  left: 23%;
+#page_top{
+  margin-left: 15%;
 }
 
 }

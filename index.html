@@ -29,7 +29,8 @@
   <body>
     <header class="page-header wrapper">
       <h1>kota Sumitomo</h1>
-      <nav>
+      <!-- PC用ナビメニュー -->
+      <nav class="pc-nav">
         <ul class="main-nav">
           <li><a href="#">WORK</a></li>
           <li><a href="#">TOPICS</a></li>
@@ -40,6 +41,27 @@
         </ul>
       </nav>
     </header>
+    <!-- モバイル用ナビスライドメニュー -->
+    <header class="mobile">
+      <div class="mobile-nav">
+        <div class="hamburger">
+        <!-- ハンバーガーメニューの線 -->
+          <span></span>
+          <span></span>
+          <span></span>
+        <!-- ハンバーガーメニューの線 -->
+        </div>
+      </div>
+      <ul class="slide-menu">
+        <li><a href="#">WORK</a></li>
+        <li><a href="#">TOPICS</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="https://twitter.com/kotasumi_nwg"><i class="bi bi-twitter"></i></a></li>
+        <li><a href="https://github.com/knwg-s05"><i class="bi bi-github"></i></a></li>
+      </ul>
+    </header>
+
     <section class="content hero">
       <h2>何気ない想いを形にするために</h2>
       <img
@@ -48,6 +70,7 @@
       />
     </section>
 
+    <div class="container">
     <section class="content new">
       <h1>NEWS</h1>
       <h2>新着情報</h2>
@@ -90,20 +113,6 @@
           /> -->
           <p>近日公開</p>
           <small>Web</small><br />
-          <small>2023.??.??</small>
-        </div>
-        <div>
-          <img class="news2"
-          src="images/coming-soon.jpg"
-          alt="ポートフォリオ3"
-          />
-          <!-- <img class="news"
-          src="https://knwg-s05.github.io/images/coming-soon.jpg"
-          width="300"
-          alt="ポートフォリオ2"
-          /> -->
-          <p>近日公開</p>
-          <small>Web開発</small><br />
           <small>2023.??.??</small>
         </div>
       </div>
@@ -209,7 +218,7 @@
           </nav>
         </section>
         <div id="page_top"><a href="#"></a></div>
-        
+      </div>
     <footer>
         <p>&copy; kota sumitomo</p>
     </footer>

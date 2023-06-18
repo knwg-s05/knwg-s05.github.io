@@ -378,7 +378,7 @@ a.button:hover {
   }
   
   .slide-menu {
-    background-color: rgba(255, 255, 255, .85);
+    background-color: rgba(255, 255, 255, 1);
     position: fixed;
     top: 70px;
     width: 100%;
@@ -489,7 +489,7 @@ a.button:hover {
 /*スマホ SIZE Page TOPへもどるアイコン
 ===============================================================*/
 #page_top{
-  margin-left: 15%;
+  margin-left: -5%;
 }
 
 }

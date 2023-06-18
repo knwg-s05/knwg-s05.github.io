@@ -39,9 +39,3 @@ document.querySelector('.hamburger').addEventListener('click', function() {
   this.classList.toggle('active');
   document.querySelector('.slide-menu').classList.toggle('active');
 })
-// jQuery
-// $(function(){
-//   $('.hamburger').click(function() {
-//     $('.hamburger, .slide-menu').toggleClass('active');
-//   });
-// });

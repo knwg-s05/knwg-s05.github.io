@@ -60,11 +60,11 @@ body {
   font-size: 1.5rem;
   overflow-x: hidden;
 }
-/* body.fixed {
+body.fixed {
   width: 100%;
   height: 100%;
   position: fixed;
-} */
+}
 
 @media only screen and (max-width: 1199px) {
   html, button {
@@ -384,6 +384,7 @@ a.button:hover {
     position: fixed;
     top: 70px;
     width: 100%;
+    height: 100%;
     left: 0;
     transform: translateX(100%);
     transition: .5s;
@@ -462,18 +463,6 @@ a.button:hover {
 ===============================================================*/
 .hamburger {
   left: 85%;
-}
-
-.slide-menu {
-  position: fixed;
-  top: 70px;
-  width: 100%;
-  left: 0;
-  transform: translateX(100%);
-  transition: .5s;
-  list-style: none;
-  text-transform: uppercase;
-  opacity: 0;
 }
 
 /* スマホ時bodyタグにoverflow-x:hiddenが聞かない為 */

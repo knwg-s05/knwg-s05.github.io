@@ -47,10 +47,10 @@ $(function() {
   $(‘.hamburger’).click(function() {
     if (state == false) {
       pos = $(window).scrollTop();
-      $(‘body’).addClass(‘fixed’).css({‘top’: -pos});
+      $(‘body’).addClass(‘.fixed’).css({‘top’: -pos});
       state = true;
     } else {
-      $(‘body’).removeClass(‘fixed’).css({‘top’: 0});
+      $(‘body’).removeClass(‘.fixed’).css({‘top’: 0});
       window.scrollTo(0, pos);
       state = false;
     }

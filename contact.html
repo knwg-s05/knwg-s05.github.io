@@ -63,110 +63,53 @@
     </header>
 
     <section class="content hero">
-      <h2>何気ない想いを形にするために</h2>
-      <img
-      src="https://knwg-s05.github.io/images/laptop-1205256_1280.jpg"
-      alt="トップページ"
-      />
-    </section>
-
-    <div class="container">
-    <section class="content new">
-      <h1>NEWS</h1>
-      <h2>新着情報</h2>
-    </section>
-      <div class="news-content">
-        <!-- GitHubでのログパス指定 -->
-        <div>
-          <img class="news"
-          src="https://knwg-s05.github.io/images/Top画像.png"
-        
-          alt="ポートフォリオ"
-          />
-          <p>ポートフォリオを作成しました。</p>
-          <small>Web</small><br />
-          <small>2023.6.25</small>
-        </div>
-        <div>
-          <img class="news2"
-          src="images/coming-soon.jpg"
-          alt="ポートフォリオ2"
-          />
-          <!-- <img class="news"
-          src="https://knwg-s05.github.io/images/coming-soon.jpg"
-          width="300"
-          alt="ポートフォリオ2"
-          /> -->
-          <p>近日公開</p>
-          <small>アプリ</small><br />
-          <small>2023.??.??</small>
-        </div>
-        <div>
-          <img class="news2"
-          src="images/coming-soon.jpg"
-          alt="ポートフォリオ3"
-          />
-          <!-- <img class="news"
-          src="https://knwg-s05.github.io/images/coming-soon.jpg"
-          width="300"
-          alt="ポートフォリオ2"
-          /> -->
-          <p>近日公開</p>
-          <small>Web</small><br />
-          <small>2023.??.??</small>
-        </div>
-      </div>
-    
-
-    <section class="content prof">
-      <h1>KOTA SUMITOMO</h1>
-      <h2>スミトモ・コウタ</h2>
-      <img class="circle"
-      src="https://knwg-s05.github.io/images/IMG_3796.JPG"
-      width="300"
-      alt="プロフィール写真"
-      />
-      <p class="proftext">Web系/アプリエンジニア目指して勉強中。<br />
-        現在システム監視/運用の業務従事。<br />
-        美容師として11年半仕事を経験。<br /><br /><br />
-      </p>
-      <!-- <a class="button" href="about.html">プロフィール</a> -->
-      <a class="button" href="https://knwg-s05.github.io/about.html">プロフィール</a>
+      <h1>CONTACT</h1>
+      <h2>お問い合わせ</h2><br />
+      <h4>お仕事のご連絡、その他お便りをお待ちしております。<br />
+      <br />
+      以下のフォームに必要事項をご入力の上、『送信』ボタンを押して下さい。<br />
+      (各種SNSからのお問い合わせも受け付けています。)
+      </h4>
     </section>
       
         <section class="content">
-          <h1>CONTACT</h1>
-          <h2>お問い合わせ</h2>
-          <p>お便りをお待ちしております。</p><br /><br />
-          <!-- <a class="button" href="contact.html">お問い合わせ</a> -->
-          <a class="button" href="https://knwg-s05.github.io/contact.html">お問い合わせ</a>
-          <br />
+        <form action="#" method="POST">
+          <dl>
+            <dt><label for="username">お名前</label></dt>
+            <dd><input id="username" type="text" name="username" required></dd>
+  
+            <dt><label for="email">メールアドレス</label></dt>
+            <dd><input id="email" type="text" name="email" required></dd>
+
+            <dt>性別</dt>
+            <dd>
+              <label><input type="radio" name="gender" value="male" checked>男性</label>
+              <label><input type="radio" name="gender" value="female">女性</label>
+            </dd>
+
+            <dt><label for="contents">お問合せ内容</label></dt>
+            <dd><textarea id="contents" name="contents"></textarea></dd>
+
+            <dt><label for="privacy">プライバシーポリシーに同意する</label></dt>
+            <dd><input id="privacy" type="checkbox" name="privacy" value="1"></dd>
+
+          </dl>
+          <input type="submit" name="submit" value="送信">
+        </form>
         </section>
 
         <section class="content">
-          <a href="#"><h1>kota Sumitomo</h1></a>
-          <nav class="page-footer wrapper">
-            <ul class="sub-nav">
-              <li><a href="#">WORK</a></li>
-              <li><a href="#">TOPICS</a></li>
-              <li><a href="https://knwg-s05.github.io/about.html">about</a></li>
-              <li><a href="#">contact</a></li>
-            </ul>
-          </nav>
+          <h2>SNSからのお問い合わせ</h2><br />
+          <h4>フォーム入力が苦手な方や、お問い合わせ完了後に自動返信メールが届かない方は、<br />
+            下記SNSのダイレクトメッセージよりお問い合わせください。</h4>
           <nav class="page-footer wrapper">
             <ul class="sub-nav">
               <li><a href="https://twitter.com/kotasumi_nwg"><i class="bi bi-twitter"></i></a></li>
               <li><a href="https://github.com/knwg-s05"><i class="bi bi-github"></i></a></li>
             </ul>
           </nav>  
-            <nav class="page-footer wrapper">  
-            <ul class="sub-nav">
-              <li><a href="#">プライバシーポリシー</a></li>
-            </ul>
-          </nav>
         </section>
         <div id="page_top"><a href="#"></a></div>
-      </div><!-- /.container -->
     <footer>
         <p>&copy; kota sumitomo</p>
     </footer>

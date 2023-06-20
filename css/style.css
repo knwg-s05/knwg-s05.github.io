@@ -35,8 +35,6 @@
 /*スマホ SIZE ハンバーガー
 ===============================================================*/
 
-
-
 /*基本
 ===============================================================*/
 * {
@@ -51,13 +49,16 @@ table {
 }
 
 /* ページ基本設定 */
-html, button {
+html,
+button {
   font-size: 12px;
   line-height: 1.5;
 }
 
 body {
-  font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",sans-serif;
+  font-family: "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium",
+    "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ Pro",
+    "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   line-height: 1.7;
   color: #090905;
   padding-top: 8px;
@@ -71,7 +72,8 @@ body.fixed {
 }
 
 @media only screen and (max-width: 1199px) {
-  html, button {
+  html,
+  button {
     font-size: 10px;
   }
 }
@@ -93,7 +95,7 @@ li ::marker {
 
 button {
   background-color: transparent;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 sup {
@@ -113,7 +115,7 @@ h1 {
 footer {
   padding-top: 32px;
   padding-bottom: 80px;
-  background-color: #F0F2F0;
+  background-color: #f0f2f0;
   text-align: center;
 }
 
@@ -125,7 +127,7 @@ footer {
   text-transform: uppercase;
   margin-top: 36px;
   list-style: none;
-} 
+}
 
 .main-nav li {
   margin-left: 36px;
@@ -154,7 +156,7 @@ footer {
   text-transform: uppercase;
   margin: 25px 15px;
   list-style: none;
-} 
+}
 
 .sub-nav li {
   margin-right: 36px;
@@ -191,7 +193,13 @@ a.button {
   text-decoration: none;
   border: 1px solid #ccc;
   background: #f1e767;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fdfbfb),
+    to(#ebedee)
+  );
   background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
   background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
   -webkit-box-shadow: inset 1px 1px 1px #fff;
@@ -204,7 +212,13 @@ a.button {
 }
 
 a.button:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#fdfbfb),
+    to(#ebedee)
+  );
   background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
   background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
 }
@@ -238,58 +252,58 @@ a.button:hover {
 /*縦線がスクロール促す
 ===============================================================*/
 /*スクロールダウン全体の場所*/
-.scrolldown1{
+.scrolldown1 {
   /*描画位置※位置は適宜調整してください*/
-position:absolute;
-top: 80%;
-left:50%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
   /*全体の高さ*/
-height:50px;
+  height: 50px;
 }
 
 /*Scrollテキストの描写*/
-.scrolldown1 span{
+.scrolldown1 span {
   /*描画位置*/
-position: absolute;
-left:-15px;
-top: -15px;
+  position: absolute;
+  left: -15px;
+  top: -15px;
   /*テキストの形状*/
-color: #432;
-font-size: 1rem;
-letter-spacing: 0.05em;
+  color: #432;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
 }
 
 /* 線の描写 */
-.scrolldown1::after{
-content: "";
+.scrolldown1::after {
+  content: "";
   /*描画位置*/
-position: absolute;
-top: 0;
+  position: absolute;
+  top: 0;
   /*線の形状*/
-width: 2.5px;
-height: 50px;
-background: #432;
+  width: 2.5px;
+  height: 50px;
+  background: #432;
   /*線の動き1.4秒かけて動く。永遠にループ*/
-animation: pathmove 1.8s ease-in-out infinite;
-opacity:0;
+  animation: pathmove 1.8s ease-in-out infinite;
+  opacity: 0;
 }
 
 /*高さ・位置・透過が変化して線が上から下に動く*/
-@keyframes pathmove{
-0%{
-  height:0;
-  top:0;
-  opacity: 0;
-}
-30%{
-  height:30px;
-  opacity: 1;
-}
-100%{
-  height:0;
-  top:50px;
-  opacity: 0;
-}
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
 }
 /*NEWS
 ===============================================================*/
@@ -307,17 +321,17 @@ opacity:0;
 }
 
 .news {
-  border: 2px solid #F0F2F0;
+  border: 2px solid #f0f2f0;
 }
 
 /* imgのpadding-topリセット */
-.news2{
+.news2 {
   padding-top: 0;
 }
 
 /* プロフォール背景色 -------------------------*/
 .prof {
-  background-color: #F0F2F0;
+  background-color: #f0f2f0;
 }
 
 .circle {
@@ -332,7 +346,7 @@ opacity:0;
 
 /*Page TOPへもどるアイコン
 ===============================================================*/
-#page_top{
+#page_top {
   width: 90px;
   height: 90px;
   position: fixed;
@@ -340,17 +354,17 @@ opacity:0;
   bottom: 50px;
   opacity: 0.6;
 }
-#page_top a{
+#page_top a {
   position: relative;
   display: block;
   width: 90px;
   height: 80px;
   text-decoration: none;
 }
-#page_top a::before{
-  font-family: 'Font Awesome 5 Free';
+#page_top a::before {
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: '\f102';
+  content: "\f102";
   font-size: 25px;
   color: #432;
   position: absolute;
@@ -363,8 +377,8 @@ opacity:0;
   margin: auto;
   text-align: center;
 }
-#page_top a::after{
-  content: 'PAGE TOP';
+#page_top a::after {
+  content: "PAGE TOP";
   font-size: 13px;
   color: #fff;
   position: absolute;
@@ -389,19 +403,19 @@ opacity:0;
   /* 共通 */
   html {
     font-size: 60%;
-  }  
+  }
 
   img {
     height: auto;
   }
 
   /* PCトップナビ無効 */
-  .pc-nav{
+  .pc-nav {
     opacity: 0;
     pointer-events: none;
-  } 
+  }
 
-/*タブレット SIZE ハンバーガー
+  /*タブレット SIZE ハンバーガー
 ===============================================================*/
   /* モバイルナビ有効 */
   .mobile {
@@ -420,7 +434,7 @@ opacity:0;
   .mobile-nav a {
     color: #432;
   }
-  
+
   .hamburger {
     width: 40px;
     height: 25px;
@@ -435,7 +449,7 @@ opacity:0;
     width: 100%;
     height: 2px;
     background-color: #432;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   /* ハンバーガーメニューの一番目の線 */
@@ -444,13 +458,13 @@ opacity:0;
   }
   /* ハンバーガーメニューの2番目の線 */
   .hamburger span:nth-last-of-type(2) {
-    top: 50%
+    top: 50%;
   }
   /* ハンバーガーメニューの3番目の線 */
   .hamburger span:last-of-type {
     top: 100%;
   }
-  
+
   .slide-menu {
     background-color: rgba(255, 255, 255, 1);
     position: fixed;
@@ -459,7 +473,7 @@ opacity:0;
     height: 100%;
     left: 0;
     transform: translateX(100%);
-    transition: .5s;
+    transition: 0.5s;
     list-style: none;
     text-transform: uppercase;
     opacity: 0;
@@ -478,86 +492,82 @@ opacity:0;
     color: #0bd;
   }
 
-/* ハンバーガーメニューの1番目の線 */
-  .hamburger.active span:first-of-type{
+  /* ハンバーガーメニューの1番目の線 */
+  .hamburger.active span:first-of-type {
     top: 50%;
     transform: rotate(405deg);
   }
   /* ハンバーガーメニューの2番目の線 */
-  .hamburger.active span:nth-of-type(2){
+  .hamburger.active span:nth-of-type(2) {
     opacity: 0;
   }
   /* ハンバーガーメニューの3番目の線 */
-  .hamburger.active span:last-of-type{
+  .hamburger.active span:last-of-type {
     top: 50%;
     transform: rotate(-405deg);
   }
-  .slide-menu.active{
-    transform: translateX(0); 
+  .slide-menu.active {
+    transform: translateX(0);
     opacity: 1;
     width: 100%;
   }
 
-/*タブレット SIZE NEWS
+  /*タブレット SIZE NEWS
 ===============================================================*/
   .news-content {
     padding-left: 25px;
   }
-
 }
 /*スマホ SIZE
 ===============================================================*/
 @media only screen and (max-width: 480px) {
-
   iframe {
     width: 480px;
   }
 
-/*スマホ フッダーナビ
+  /*スマホ フッダーナビ
 ===============================================================*/
-.page-footer {
-  padding-left: 5%;
-}
+  .page-footer {
+    padding-left: 5%;
+  }
 
-/*スマホ main
+  /*スマホ main
 ===============================================================*/
-.hero {
-  height: 40%;
-  margin-top: -5%;
-  margin-bottom: -5%;
-}
+  .hero {
+    height: 40%;
+    margin-top: -5%;
+    margin-bottom: -5%;
+  }
 
-/*スマホ 縦線がスクロール促す
+  /*スマホ 縦線がスクロール促す
 ===============================================================*/
-/*スクロールダウン全体の場所*/
-.scrolldown1{
-  /*描画位置※位置は適宜調整してください*/
-position:absolute;
-top: 45%;
-left:50%;
-  /*全体の高さ*/
-height:50px;
-}
+  /*スクロールダウン全体の場所*/
+  .scrolldown1 {
+    /*描画位置※位置は適宜調整してください*/
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    /*全体の高さ*/
+    height: 50px;
+  }
 
-/*スマホ NEWS
+  /*スマホ NEWS
 ===============================================================*/
-.news-content {
-  padding-left: 50px;
-  padding-right: 50px;
-}
+  .news-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
-.
+  .
 
 /*スマホ SIZE ハンバーガー
 ===============================================================*/
 .hamburger {
-  left: 85%;
-}
+    left: 85%;
+  }
 
-/* スマホ時bodyタグにoverflow-x:hiddenが聞かない為 */
-.overf-x {
-  overflow-x: hidden;
-}
-
-
+  /* スマホ時bodyタグにoverflow-x:hiddenが聞かない為 */
+  .overf-x {
+    overflow-x: hidden;
+  }
 }

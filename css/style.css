@@ -246,7 +246,7 @@ a.button:hover {
 /* プライバシーポリシー */
 .privacy {
   margin-bottom: 60px;
-  padding-left: 15%;
+  padding-left: 10%;
 }
 
 /*縦線がスクロール促す
@@ -545,7 +545,7 @@ a.button:hover {
   .scrolldown1 {
     /*描画位置※位置は適宜調整してください*/
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     /*全体の高さ*/
     height: 50px;
@@ -563,7 +563,7 @@ a.button:hover {
 /*スマホ SIZE ハンバーガー
 ===============================================================*/
 .hamburger {
-    left: 85%;
+    left: 80%;
   }
 
   /* スマホ時bodyタグにoverflow-x:hiddenが聞かない為 */

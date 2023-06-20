@@ -1,0 +1,10 @@
+/*スマホ SIZE
+===============================================================*/
+@media only screen and (max-width: 480px) {
+iframe {
+width: 400px;
+height: 1200px;
+margin-bottom: -20%;
+}
+
+}

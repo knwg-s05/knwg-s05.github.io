@@ -216,7 +216,7 @@ a.button:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 36px;
+  margin-top: 60px;
   padding-bottom: 10px;
   scroll-snap-align: start;
 }
@@ -257,6 +257,12 @@ a.button:hover {
 
 .circle {
   border-radius: 50%;
+}
+
+/* CONTACT */
+.form {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*Page TOPへもどるアイコン
@@ -462,6 +468,8 @@ a.button:hover {
   padding-left: 50px;
   padding-right: 50px;
 }
+
+.
 
 /*スマホ SIZE ハンバーガー
 ===============================================================*/

@@ -44,3 +44,8 @@ document.querySelector('.hamburger').addEventListener('click', function() {
   this.classList.toggle('fixed');
   document.querySelector('body').classList.toggle('fixed');
 })
+// メニュー展開時にスクロールを非表示
+document.querySelector('.hamburger').addEventListener('click', function() {
+  this.classList.toggle('hidden');
+  document.querySelector('.scrolldown1').classList.toggle('hidden');
+})
